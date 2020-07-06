@@ -1,9 +1,15 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:js-lib"],
   "schedule": ["every 3rd month"],
-  "automerge": "minor",
   "semanticCommits": true,
-  "pinVersions": false,
+  "rangeStrategy": "auto",
+  "minor": {
+    "automerge": true
+  },
+  "major": {
+    "automerge": false
+  },
   "packageRules": [
     {
       "packagePatterns": ["eslint"],
