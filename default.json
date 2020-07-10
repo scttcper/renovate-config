@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:js-lib"],
-  "schedule": ["every 3rd month"],
+  "schedule": ["before 12:00pm on the first sunday of the every 3rd month"],
   "semanticCommits": true,
   "rangeStrategy": "auto",
   "minor": {
